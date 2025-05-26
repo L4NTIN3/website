@@ -1,0 +1,82 @@
+body {
+    font-family: "Segoe UI", sans-serif;
+    margin: 40px;
+    background: #f8f9fa;
+    color: #212529;
+}
+
+.container {
+    max-width: 900px;
+    margin: auto;
+    background: #ffffff;
+    padding: 30px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    border-radius: 12px;
+}
+
+h1, h2, h3 {
+    color: #343a40;
+}
+
+.section {
+    margin-bottom: 25px;
+}
+
+.skills span {
+    background: #dee2e6;
+    padding: 6px 12px;
+    border-radius: 6px;
+    margin-right: 8px;
+    display: inline-block;
+    margin-top: 6px;
+}
+  
+.job, .education {
+    margin-bottom: 20px;
+}
+
+.job-title, .degree {
+    font-weight: bold;
+    color: #212529;
+}
+
+.date {
+    float: right;
+    color: #6c757d;
+    font-style: italic;
+}
+
+.clearfix::after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+.links-container{
+    display: flex;
+    flex-direction: row;
+    gap: 1em;
+    align-items: center;
+}
+
+.topdiv{
+    padding: 10px; 
+    margin: -30px -30px 0px -30px; 
+    display: flex; 
+    flex-direction: row; 
+    align-items: center;
+    gap: 1em;
+}
+
+.topdiv > img{
+    border-radius: 50%;
+    height: 10rem; 
+}
+.topdiv > :nth-child{
+    display: flex; 
+    flex-direction: column; 
+    gap: 0.1rem
+}
+.topdiv > :last-child{
+    margin-left: auto;
+}
