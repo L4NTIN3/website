@@ -1,6 +1,6 @@
 body {
     font-family: "Segoe UI", sans-serif;
-    margin: 40px;
+    margin: 20px;
     background: #f8f9fa;
     color: #212529;
 }
@@ -9,7 +9,7 @@ body {
     max-width: 900px;
     margin: auto;
     background: #ffffff;
-    padding: 30px;
+    padding: 15px;
     box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
     border-radius: 12px;
 }
@@ -61,22 +61,28 @@ h1, h2, h3 {
 
 .topdiv{
     padding: 10px; 
-    margin: -30px -30px 0px -30px; 
+    margin: -15px -15px 0px -15px; 
     display: flex; 
     flex-direction: row; 
     align-items: center;
     gap: 1em;
+    flex-wrap: wrap;
 }
 
 .topdiv > img{
     border-radius: 50%;
     height: 10rem; 
+    justify-content: center;
 }
 .topdiv > :nth-child{
     display: flex; 
     flex-direction: column; 
     gap: 0.1rem
 }
-.topdiv > :last-child{
-    margin-left: auto;
+
+@media screen and (min-width: 600px) {
+
+    .topdiv > :last-child{
+        margin-left: auto;
+    }
 }
